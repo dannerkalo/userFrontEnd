@@ -1,30 +1,14 @@
+<!doctype html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>UsersFrontEnd</title>
+  <title>Ng8forms</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 <body>
-  <div>
-    <h3>Users</h3>
-    <div class="row">
-      <div class="col-sm-4" *ngFor="let user of users | async">
-        <div class="card">
-          <div class="card-body">
-            <ul>
-              <li *ngFor="let card of cardData">
-                 <span>{{user.id}}</span>
-                 <span>{{user.firstName}}</span>
-                 <span>{{user.LastName}}</span>
-                 <span>{{user.email}}</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  <h1>app-root</h1>
+  <app-root></app-root>
 </body>
 </html>

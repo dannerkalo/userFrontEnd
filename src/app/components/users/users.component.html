@@ -1,1 +1,43 @@
-<p>users works!</p>
+<head>
+    <meta charset="utf-8">
+    <title>UsersFrontEnd</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+      <h3>Users</h3>
+<div class="container">
+    <table class="table table table-striped table-hover">
+        <thead class="thead-dark">
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Firstname</th>
+          <th scope="col">Lastname</th>
+          <th scope="col">Email</th>
+          <th scope="col">Created</th>
+          <th scope="col">createdBy</th>
+          <th scope="col">updated</th>
+          <th scope="col">UpdatedBy</th>
+        </tr>
+    </thead>
+    <tbody>       
+         <tr *ngFor="let user of users">
+            <td>{{ user.id }}</td>
+            <td>{{ user.firstName }}</td>
+            <td>{{ user.lastName }}</td>
+            <td>{{ user.email }}</td>
+            <td>{{ user.createdAt }}</td>
+            <td>{{ user.createdBy }}</td>
+            <td>{{ user.updatedAt }}</td>
+            <td>{{ user.updatedBy }}</td>
+        </tr>
+    </tbody>
+        </table>
+</div>
+</body>
+ 
+  

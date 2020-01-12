@@ -4,8 +4,8 @@ import { UsersComponent } from './components/users/users.component';
 
 
 const routes: Routes = [
-  {path:'', component: UsersComponent},
- // { path: 'users/:userId', component: UsersComponent }
+  {path:'users', component: UsersComponent},
+ //{ path: 'users/:userId', component: UsersComponent }
 ];
 
 @NgModule({
